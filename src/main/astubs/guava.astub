@@ -1,0 +1,9 @@
+import org.checkerframework.checker.nullness.qual.*;
+
+/* ========================================================================== */
+package com.google.common.base;
+
+public class Preconditions {
+    @EnsuresNonNull("#1")
+    public static <T extends @Nullable Object> @NonNull T checkNotNull(@Nullable T reference);
+}
